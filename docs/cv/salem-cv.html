@@ -1,0 +1,140 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Salem Yousry Abdelaziz — CV</title>
+<!--
+  Source of public/Salem_Yousry_Abdelaziz_CV.pdf
+  Rebuild:  "C:/Program Files (x86)/Microsoft/Edge/Application/msedge.exe" --headless --disable-gpu
+            --no-pdf-header-footer --print-to-pdf="public/Salem_Yousry_Abdelaziz_CV.pdf" docs/cv/salem-cv.html
+  Rules: one page, single column, real text (no images of text), no tables, no icons — ATS-safe.
+-->
+<style>
+  @page { size: A4; margin: 0; }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  :root {
+    --ink: #1a1d23;
+    --muted: #4b5260;
+    --accent: #8a6a1f;   /* bronze from the Salem tech logo, darkened for print contrast */
+    --rule: #d9cdb0;
+  }
+  html, body { background: #fff; }
+  body {
+    width: 210mm; min-height: 297mm;
+    padding: 15mm 16mm 13mm;
+    font-family: "Segoe UI", Calibri, Arial, sans-serif;
+    font-size: 9.9pt; line-height: 1.42; color: var(--ink);
+    -webkit-print-color-adjust: exact; print-color-adjust: exact;
+  }
+  header { border-bottom: 2px solid var(--accent); padding-bottom: 9px; margin-bottom: 12px; }
+  h1 { font-size: 23pt; font-weight: 700; letter-spacing: .2px; line-height: 1.1; }
+  .headline { font-size: 11.5pt; font-weight: 600; color: var(--accent); margin-top: 3px; }
+  .contact { font-size: 9.3pt; color: var(--muted); margin-top: 5px; }
+  .contact span + span::before { content: "  |  "; color: var(--rule); white-space: pre; }
+
+  section { margin-top: 12px; }
+  h2 {
+    font-size: 10.2pt; font-weight: 700; letter-spacing: 1.1px; text-transform: uppercase;
+    color: var(--ink); border-bottom: 1px solid var(--rule); padding-bottom: 3px; margin-bottom: 7px;
+  }
+  p.summary { color: var(--ink); }
+
+  .skills .row { display: flex; gap: 8px; margin-bottom: 4px; }
+  .skills .label { flex: 0 0 34mm; font-weight: 700; }
+  .skills .items { flex: 1; color: var(--ink); }
+
+  .job { margin-bottom: 9px; }
+  .job-head { display: flex; justify-content: space-between; align-items: baseline; gap: 12px; }
+  .role { font-weight: 700; font-size: 10.3pt; }
+  .dates { font-weight: 600; color: var(--muted); white-space: nowrap; font-size: 9.5pt; }
+  .org { color: var(--muted); font-size: 9.4pt; margin-bottom: 3px; }
+  ul { padding-left: 15px; }
+  li { margin-bottom: 2.5px; }
+  li::marker { color: var(--accent); }
+
+  .edu-head { display: flex; justify-content: space-between; align-items: baseline; gap: 12px; }
+</style>
+</head>
+<body>
+
+<header>
+  <h1>Salem Yousry Abdelaziz</h1>
+  <div class="headline">Machine Learning Engineer | Business Development &amp; Strategy | MBA</div>
+  <div class="contact">
+    <span>Cairo, Egypt</span><span>+20 151 536 3773</span><span>salemyousry4@gmail.com</span><span>github.com/salemyousry4-design</span>
+    <!-- TODO: add LinkedIn URL and portfolio URL once live -->
+  </div>
+</header>
+
+<section>
+  <h2>Professional Summary</h2>
+  <p class="summary">
+    MBA-qualified business development and strategy consultant moving into machine learning engineering, with
+    4 years of business development experience in the restaurant and F&amp;B sector. Intermediate Python practitioner certified in
+    Machine Learning A-Z (Udemy, 2026), trained across regression, classification, clustering, association rule
+    learning, reinforcement learning, NLP, deep learning, dimensionality reduction (PCA, LDA, Kernel PCA), and model
+    selection with boosting (XGBoost), plus deploying, automating, and monitoring ML workflows on AWS. Brings the commercial judgment to
+    frame business problems as ML problems and explain results to decision-makers.
+    Works in Arabic and English.
+  </p>
+</section>
+
+<section class="skills">
+  <h2>Core Skills</h2>
+  <div class="row"><div class="label">Machine Learning</div><div class="items">Regression, Classification, Clustering, Association Rule Learning, Reinforcement Learning, Natural Language Processing (NLP), Deep Learning, Dimensionality Reduction (PCA, LDA, Kernel PCA), Model Selection &amp; Boosting</div></div>
+  <div class="row"><div class="label">Python &amp; Libraries</div><div class="items">Python, NumPy, pandas, scikit-learn, XGBoost, TensorFlow, Matplotlib</div></div>
+  <div class="row"><div class="label">MLOps on AWS</div><div class="items">ML Development &amp; Deployment, ML Workflow Automation (CI/CD Pipelines), ML Monitoring &amp; Maintenance</div></div>
+  <div class="row"><div class="label">Business</div><div class="items">Business Development, Management Consulting, Market Research, Go-to-Market Strategy, Strategic Partnerships, B2B Growth, Contract Negotiation, Feasibility Studies, Financial Modeling, Cross-Functional Leadership</div></div>
+  <div class="row"><div class="label">Languages</div><div class="items">Arabic (Native), English (Fluent), German (Elementary, A2)</div></div>
+</section>
+
+<section>
+  <h2>Certification</h2>
+  <div class="edu-head">
+    <div class="role">Machine Learning A-Z: ML, DL, AI with AWS, Python &amp; R</div>
+    <div class="dates">Oct 2026</div>
+  </div>
+  <div class="org">Udemy, SuperDataScience | 49.5 hours | Credential: ude.my/UC-4a4fad90-7b21-4dd7-b2ca-e6ed757c9feb</div>
+</section>
+
+<!--
+  v2 — add once the repos exist on github.com/salemyousry4-design (see docs/PLAN.md, Phase 1). Place ABOVE Experience.
+<section>
+  <h2>Selected Machine Learning Projects</h2>
+  <div class="job">
+    <div class="job-head"><div class="role">Customer Churn Prediction</div><div class="dates">github.com/salemyousry4-design/churn-prediction</div></div>
+    <ul>
+      <li>Built and compared classification models with k-fold cross-validation and grid search; boosted model reached [real metric] on held-out data.</li>
+      <li>Translated predictions into a retention budget: targeting the top [x]% risk segment recovers an estimated [real number].</li>
+    </ul>
+  </div>
+</section>
+-->
+
+<section>
+  <h2>Professional Experience</h2>
+
+  <div class="job">
+    <div class="job-head"><div class="role">Business Development Consultant</div><div class="dates">2022 – Present</div></div>
+    <div class="org">Restaurant &amp; F&amp;B Sector | Cairo, Egypt</div>
+    <ul>
+      <li>Negotiate B2B agreements and build strategic alliances with regional technology providers and operational partners.</li>
+      <li>Automated business reporting and operational forecasting workflows, cutting manual analysis cycle time by 40%.</li>
+      <li>Conduct data analysis and market research to shape scalable go-to-market strategies for new restaurant concepts and F&amp;B ventures.</li>
+      <li>Advise clients on market entry and growth priorities, using feasibility studies and financial models to support go / no-go decisions.</li>
+      <li>Lead engagements end to end, from scoping the commercial problem to aligning teams and presenting recommendations to senior management.</li>
+    </ul>
+  </div>
+</section>
+
+<section>
+  <h2>Education</h2>
+  <div class="edu-head">
+    <div class="role">Master of Business Administration (MBA), Technology Management &amp; Strategic Business Growth</div>
+    <div class="dates">2023</div>
+  </div>
+  <div class="org">Arab Academy for Science, Technology and Maritime Transport (AASTMT) | Cairo, Egypt</div>
+</section>
+
+</body>
+</html>

@@ -1,0 +1,24 @@
+# المكتبات (بتتسطب تاني بـ npm install)
+node_modules/
+
+# ملفات الـ build
+dist/
+build/
+.next/
+out/
+
+# المتغيرات والباسوردات
+.env
+.env.local
+.env.*.local
+
+# ملفات اللوج
+*.log
+npm-debug.log*
+
+# ملفات المحرر والسيستم
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
