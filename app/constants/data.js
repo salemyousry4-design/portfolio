@@ -27,15 +27,18 @@ import {
   MdCalculate,
   MdGavel,
   MdLanguage,
-  MdModelTraining,
   MdInsights,
+  MdSmartToy,
+  MdApi,
+  MdManageSearch,
+  MdDataObject,
 } from "react-icons/md";
 
 const personalInfo = {
   name: "Salem Yousry Abdelaziz",
   displayName: "Salem Yousry",
   brand: "Salem",
-  title: "Machine Learning Engineer | Business Development & Strategy",
+  title: "AI Automation Engineer | LLM Applications | Business Strategy (MBA)",
   phone: "+201515363773",
   phoneDisplay: "0151 5363773",
   whatsapp: "201515363773",
@@ -48,7 +51,7 @@ const personalInfo = {
   mark: "/salem-mark.png",
   cv: "/Salem_Yousry_Abdelaziz_CV.pdf",
   experienceYears: 4,
-  bio: "MBA-qualified business development and strategy consultant moving into machine learning engineering, with 4 years of business development experience in the restaurant and F&B sector. Certified in Machine Learning A-Z (Udemy, 2026), I work in Python (NumPy, pandas, scikit-learn, XGBoost, TensorFlow) across regression, classification, clustering, NLP, deep learning and more, and deploy and monitor ML workflows on AWS. My edge is translating business problems into ML problems, and the results back into decisions.",
+  bio: "MBA-qualified business and strategy consultant moving into AI engineering, with 4 years of business development experience in the restaurant and F&B sector. I build Python applications end to end, from client discovery and requirements to APIs, real-time interfaces, automated tests and retrieval-augmented AI assistants, on a foundation of machine learning (certified, 2026). My edge is turning a messy business problem into a practical AI solution, and explaining it to the people who decide.",
   languages: [
     { name: "Arabic", level: "Native" },
     { name: "English", level: "Fluent" },
@@ -59,18 +62,19 @@ const personalInfo = {
 const hero = {
   greeting: "Hello, I'm",
   roles: [
-    "Machine Learning Engineer",
+    "AI Automation Engineer",
+    "LLM Applications & RAG",
     "Business Development & Strategy",
     "MBA · Technology Management",
     "Where Tech Meets Business",
   ],
   intro:
-    "I translate business problems into machine learning solutions, and the results back into decisions leaders can act on.",
+    "I turn business problems into AI automations and LLM-powered tools, and explain the results in a language leaders can act on.",
 };
 
 const qualification = {
   paragraphs: [
-    "An MBA-qualified business development and strategy consultant moving into machine learning engineering. I work in Python across regression, classification, clustering, association rules, reinforcement learning, NLP, deep learning, and dimensionality reduction.",
+    "An MBA-qualified business and strategy consultant moving into AI engineering. I build LLM applications with retrieval-augmented generation, tool calling and structured outputs, on a solid machine learning foundation: classification, regression, deep learning, NLP and dimensionality reduction.",
     "Most ML projects fail on the business side, not the model side. I bring both: the modeling skills to build the solution, and the commercial judgment to make sure it answers the right question, backed by 4 years of business development in the restaurant and F&B sector.",
   ],
 };
@@ -82,9 +86,9 @@ const services = [
     icon: MdHandshake,
   },
   {
-    title: "Machine Learning",
-    text: "Building predictive models that turn data into clear, measurable business decisions.",
-    icon: MdModelTraining,
+    title: "AI Automation & LLM Apps",
+    text: "AI assistants, retrieval-augmented search and automated workflows, plus predictive models that turn data into decisions.",
+    icon: MdSmartToy,
   },
   {
     title: "Tech ↔ Business Bridge",
@@ -105,6 +109,16 @@ const stats = [
 ];
 
 const skillCategories = [
+  {
+    title: "AI / LLM",
+    skills: [
+      { name: "Retrieval-Augmented Generation", icon: MdManageSearch },
+      { name: "Tool / Function Calling", icon: MdApi },
+      { name: "Structured Outputs", icon: MdDataObject },
+      { name: "Prompt Engineering", icon: MdSmartToy },
+      { name: "Local LLMs (Ollama)", icon: MdHub },
+    ],
+  },
   {
     title: "Machine Learning",
     skills: [
@@ -162,6 +176,7 @@ const skillCategories = [
 
 // Words shown on the 3D skills globe (Skills section).
 const sphereSkills = [
+  "LLMs", "RAG", "AI Automation", "FastAPI", "Ollama",
   "Python", "NumPy", "pandas", "scikit-learn", "TensorFlow",
   "Regression", "Classification", "Clustering",
   "Association Rules", "Reinforcement", "NLP", "Deep Learning",

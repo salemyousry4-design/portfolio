@@ -19,12 +19,12 @@ const playfair = Playfair_Display({
 });
 
 const description =
-	"Salem Yousry: MBA-qualified machine learning engineer and business development consultant in Cairo, with 4 years in the restaurant and F&B sector. Turning business problems into ML solutions.";
+	"Salem Yousry: AI automation engineer and MBA-qualified business strategist in Cairo, with 4 years in the restaurant and F&B sector. Turning business problems into AI automations and LLM applications.";
 
 export const metadata: Metadata = {
 	// Absolute base for the OG image. On Vercel, Next falls back to the production URL automatically.
 	metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL || "https://portfolio-fox-3551.vercel.app"),
-	title: "Salem Yousry | Machine Learning Engineer & Business Strategist",
+	title: "Salem Yousry | AI Automation Engineer & Business Strategist",
 	description,
 	icons: {
 		icon: [
@@ -36,7 +36,7 @@ export const metadata: Metadata = {
 	},
 	manifest: "/manifest.json",
 	openGraph: {
-		title: "Salem Yousry | Machine Learning Engineer & Business Strategist",
+		title: "Salem Yousry | AI Automation Engineer & Business Strategist",
 		description,
 		images: [{ url: "/og-image.png", width: 1200, height: 630, alt: "Salem Yousry" }],
 		type: "website",
