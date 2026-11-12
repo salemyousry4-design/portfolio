@@ -1,8 +1,8 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { FaGraduationCap, FaDownload, FaExternalLinkAlt, FaGithub, FaCertificate, FaWhatsapp } from "react-icons/fa";
-import { MdLocationOn, MdEmail, MdLanguage, MdWork, MdSchool } from "react-icons/md";
+import { FaGraduationCap, FaDownload, FaExternalLinkAlt, FaGithub, FaLinkedin, FaCertificate, FaWhatsapp } from "react-icons/fa";
+import { MdLocationOn, MdEmail, MdLanguage, MdWork } from "react-icons/md";
 import { data } from "../../constants";
 import dynamic from "next/dynamic";
 
@@ -25,11 +25,11 @@ const infoCards = [
   { icon: FaWhatsapp, label: "WhatsApp", value: personalInfo.phoneDisplay, href: `https://wa.me/${personalInfo.whatsapp}`, external: true },
   { icon: MdEmail, label: "Email", value: personalInfo.email, href: `mailto:${personalInfo.email}` },
   { icon: MdWork, label: "Experience", value: `${personalInfo.experienceYears} Years · F&B Business Dev` },
-  { icon: MdSchool, label: "Education", value: `MBA · ${education[0].year}` },
+  personalInfo.linkedin && { icon: FaLinkedin, label: "LinkedIn", value: "Connect", href: personalInfo.linkedin, external: true },
   personalInfo.github
     ? { icon: FaGithub, label: "GitHub", value: "View Profile", href: personalInfo.github, external: true }
     : { icon: FaCertificate, label: "Certification", value: "Machine Learning A-Z", href: certifications[0].file, external: true },
-];
+].filter(Boolean);
 
 const About = () => {
   return (

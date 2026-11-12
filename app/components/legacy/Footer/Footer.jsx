@@ -1,6 +1,6 @@
 "use client";
 
-import { FaGithub, FaWhatsapp } from "react-icons/fa";
+import { FaGithub, FaLinkedin, FaWhatsapp } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
 import { data } from "../../../constants";
 
@@ -11,6 +11,11 @@ const socialLinks = [
     href: personalInfo.github,
     icon: FaGithub,
     label: "GitHub",
+  },
+  personalInfo.linkedin && {
+    href: personalInfo.linkedin,
+    icon: FaLinkedin,
+    label: "LinkedIn",
   },
   {
     href: `https://wa.me/${personalInfo.whatsapp}`,

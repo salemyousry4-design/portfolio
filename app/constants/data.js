@@ -42,6 +42,7 @@ const personalInfo = {
   email: "salemyousry4@gmail.com",
   location: "Cairo, Egypt",
   github: "https://github.com/salemyousry4-design",
+  linkedin: "https://www.linkedin.com/in/salem-yousry-28655337b/",
   photo: "/salem.jpg",
   logo: "/salem-logo.png",
   mark: "/salem-mark.png",
