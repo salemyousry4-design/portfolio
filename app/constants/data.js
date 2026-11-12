@@ -218,6 +218,7 @@ const projects = [
     name: "Sky Sync AI: Fleet Readiness System",
     img: "/Projects/skysync-ai.png",
     github: `${GH}/skysync-ai-demo`,
+    website: "https://salemyousry4-design.github.io/skysync-ai-demo/",
     featured: true,
     category: "ml",
     tech: ["Python", "FastAPI", "WebSockets", "RAG", "SQLite"],
