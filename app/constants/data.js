@@ -31,9 +31,6 @@ import {
   MdInsights,
 } from "react-icons/md";
 
-// Content source: docs/01-profile.md … docs/06-projects.md
-// Keep this file in sync with the CV (docs/cv/salem-cv.html).
-
 const personalInfo = {
   name: "Salem Yousry Abdelaziz",
   displayName: "Salem Yousry",
@@ -214,7 +211,85 @@ const certifications = [
 // Case studies. The Projects page is hidden from the navbar until there are at least 3.
 // Shape: { name, img?, github?, website?, featured?, category: "ml" | "business",
 //          tech: [], problem, approach, result }
-const projects = [];
+const GH = "https://github.com/salemyousry4-design";
+
+const projects = [
+  {
+    name: "Sky Sync AI: Fleet Readiness System",
+    img: "/Projects/skysync-ai.png",
+    github: `${GH}/skysync-ai-demo`,
+    featured: true,
+    category: "ml",
+    tech: ["Python", "FastAPI", "WebSockets", "RAG", "SQLite"],
+    problem:
+      "A helicopter fleet needs one real-time picture of which aircraft are mission-ready, while the tower, engineers and pilots each need their own workflow, all on a network with no internet.",
+    approach:
+      "Built a fully offline, LAN-based system with six role-based workflows, an explainable 0–100 health score with reasons, and an AI maintenance assistant that answers only from cited manuals and live fleet data.",
+    result:
+      "A live readiness dashboard shared by every device. Overdue aircraft are blocked from takeoff automatically, and 55 automated tests cover the full maintenance cycle.",
+  },
+  {
+    name: "Breast Cancer Prediction",
+    img: "/Projects/breast-cancer.png",
+    github: `${GH}/Data-classification-by-using-xgboost`,
+    website: "https://data-classification-by-using-xgboost-hwbathwdbxd2m78n7djsgs.streamlit.app/",
+    featured: true,
+    category: "ml",
+    tech: ["XGBoost", "scikit-learn", "Streamlit"],
+    problem: "Classify breast tumours as benign or malignant from nine cytology measurements.",
+    approach:
+      "Compared four models with 10-fold cross-validation and deployed XGBoost in a live app with feature importances.",
+    result: "97.1% test accuracy and 100% recall on malignant cases: no malignant tumour missed.",
+  },
+  {
+    name: "Cat vs Dog Image Classifier",
+    img: "/Projects/cat-dog-cnn.png",
+    github: `${GH}/cnn-for-cat-or-dog-classifier`,
+    featured: true,
+    category: "ml",
+    tech: ["TensorFlow", "Keras", "CNN", "Transfer Learning"],
+    problem: "Recognise whether a photo shows a cat or a dog.",
+    approach:
+      "Trained a CNN from scratch and a MobileNetV2 transfer-learning model on 8,000 images with data augmentation, served in an upload-a-photo app.",
+    result: "98% accuracy on 2,000 unseen test images with only 1,281 trainable parameters.",
+  },
+  {
+    name: "Bank Customer Churn Prediction",
+    img: "/Projects/bank-churn.png",
+    github: `${GH}/bank-churn-prediction-ann`,
+    category: "ml",
+    tech: ["TensorFlow", "Neural Network", "Streamlit"],
+    problem: "Identify bank customers who are about to close their account, before they leave.",
+    approach:
+      "Trained an artificial neural network on 10,000 customers with leakage-safe preprocessing and early stopping, and built a scoring app.",
+    result:
+      "85.7% accuracy and 0.856 ROC-AUC. 84% of flagged customers really churn, so retention offers reach the right people.",
+  },
+  {
+    name: "Smart Purchase Predictor",
+    img: "/Projects/purchase-svm.png",
+    github: `${GH}/social-network-ads-app`,
+    website: "https://social-network-ads-app.streamlit.app",
+    category: "ml",
+    tech: ["SVM", "Grid Search", "Plotly", "Streamlit"],
+    problem: "Predict which social-network users will buy after seeing an ad, to target ad spend.",
+    approach:
+      "Tuned an RBF-kernel SVM with grid search and calibrated it to output purchase probabilities on an interactive decision map.",
+    result: "91.7% cross-validated accuracy, 7 points above logistic regression.",
+  },
+  {
+    name: "Wine Classification: PCA vs LDA",
+    img: "/Projects/wine-pca-lda.png",
+    github: `${GH}/PCA-For-Large-Dataset`,
+    website: "https://pca-for-large-datasetgit-6judfarlhqxcu8qc5kdhfo.streamlit.app",
+    category: "ml",
+    tech: ["PCA", "LDA", "scikit-learn", "Plotly"],
+    problem: "Can 13 chemical measurements be reduced to 2 without losing predictive power?",
+    approach:
+      "Compared unsupervised PCA with supervised LDA as a pre-processing step for classification, with interactive dashboards for both.",
+    result: "2 LDA components reach 99.3% cross-validated accuracy, beating the model that uses all 13 features.",
+  },
+];
 const MIN_PROJECTS_TO_SHOW = 3;
 const showProjects = projects.length >= MIN_PROJECTS_TO_SHOW;
 

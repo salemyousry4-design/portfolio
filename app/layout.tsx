@@ -23,7 +23,7 @@ const description =
 
 export const metadata: Metadata = {
 	// Absolute base for the OG image. On Vercel, Next falls back to the production URL automatically.
-	metadataBase: process.env.NEXT_PUBLIC_SITE_URL ? new URL(process.env.NEXT_PUBLIC_SITE_URL) : undefined,
+	metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL || "https://portfolio-fox-3551.vercel.app"),
 	title: "Salem Yousry | Machine Learning Engineer & Business Strategist",
 	description,
 	icons: {
