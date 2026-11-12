@@ -130,8 +130,8 @@ const Landing = () => {
                   </defs>
                   <image
                     style={{ filter: "opacity(0.95)" }}
-                    // Enlarged and shifted so the face sits a bit further left inside the blob.
-                    x="-14%"
+                    // Slightly enlarged so the portrait fills the blob, face centred.
+                    x="-7%"
                     y="0"
                     width="114%"
                     height="114%"
